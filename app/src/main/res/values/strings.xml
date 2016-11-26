@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">MyTaoShop</string>
+    <string name="shop">市场</string>
+    <string name="message">消息</string>
+    <string name="list">通讯录</string>
+    <string name="myself">我的</string>
+    <string name="goods_details">商品详情</string>
+    <string name="goods_detail_message">发消息</string>
+    <string name="goods_money">%s￥</string>
+    <string name="goods_detail_master">发布者:%s</string>
+    <string name="goods_price_hint">价格(￥)</string>
+    <string name="goods_name_hint">商品的名称</string>
+    <string name="goods_describe">请输入商品的描述,200字以内……</string>
+    <string name="login_need">需要登录后才能操作</string>
+
+
+    <string name="all">全部</string>
+    <string name="household">家用</string>
+    <string name="electron">电子</string>
+    <string name="dress">服饰</string>
+    <string name="toy">玩具</string>
+    <string name="book">图书</string>
+    <string name="gift">礼物</string>
+    <string name="other">其他</string>
+
+    <string name="login_register">登录/注册</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="username">请输入用户名</string>
+    <string name="nickname">请输入昵称</string>
+    <string name="pwd">请输入密码</string>
+    <string name="qr_pwd">请确认密码</string>
+
+    <string name="my_inf">个人信息</string>
+    <string name="my_goods">我的商品</string>
+    <string name="up_goods">上传商品</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

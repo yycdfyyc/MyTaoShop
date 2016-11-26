@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.yuyunchao.asus.mytaoshop.presenter.details.GoodsDetailsActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_goods_details"
+        android:background="@color/colorPrimary"
+        android:title="@string/goods_details"
+        android:titleTextColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_below="@+id/tb_goods_details"
+        android:layout_above="@+id/but_send_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_details_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_370">
+                </android.support.v4.view.ViewPager>
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_60"
+                    android:layout_alignBottom="@+id/vp_details_img"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    app:ci_drawable="@drawable/circle_indicator" />
+            </RelativeLayout>
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/tv_details_name"
+                android:textSize="@dimen/sp_23"
+                android:text="@string/goods_name_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="@dimen/sp_20"
+                android:id="@+id/tv_details_price"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/goods_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_18"
+                android:id="@+id/tv_details_master"
+                android:text="@string/goods_detail_master"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="@dimen/sp_15"
+                android:id="@+id/tv_details_des"
+                android:text="@string/goods_describe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </ScrollView>
+    <Button
+        android:id="@+id/but_send_message"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/goods_detail_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

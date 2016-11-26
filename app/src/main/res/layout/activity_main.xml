@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presenter.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_title"
+            android:textSize="@dimen/sp_23"
+            android:text="@string/shop"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_pagers"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/ll_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/ll_linear"
+        android:paddingTop="@dimen/dp_5"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60">
+        <TextView
+            android:id="@+id/tv_shop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_ic_shopping"
+            android:gravity="center"
+            android:text="@string/shop"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_ic_chat"
+            android:gravity="center"
+            android:text="@string/message"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:id="@+id/tv_mail_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_ic_people"
+            android:gravity="center"
+            android:text="@string/list"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:id="@+id/tv_me"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_ic_identity"
+            android:gravity="center"
+            android:text="@string/myself"
+            android:textSize="@dimen/sp_15" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

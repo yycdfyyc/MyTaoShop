@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--蓝-->
+    <color name="colorblue">#0000ff</color>
+    <!--浅蓝-->
+    <color name="colorPrimary">#0000c0</color>
+    <!--状态栏底色 深蓝-->
+    <color name="colorPrimaryDark">#0000a8</color>
+    <!--粉色-->
+    <color name="colorAccent">#FF4081</color>
+    <!--白色-->
+    <color name="white">#ffffff</color>
+    <!--黑色-->
+    <color name="black">#000000</color>
+    <!--字体默认颜色 灰色-->
+    <color name="gray">#3d4245</color>
+    <!--灰白-->
+    <color name="graywhite">#e5e5e5</color>
+</resources>

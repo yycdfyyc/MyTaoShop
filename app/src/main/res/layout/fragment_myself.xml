@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/graywhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.yuyunchao.asus.mytaoshop.presenter.main.myself.MyselfFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/re_tlogin"
+        android:background="@color/colorblue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.pkmmte.view.CircularImageView
+            android:layout_marginTop="@dimen/dp_10"
+            android:id="@+id/im_head"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/mrhead"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            />
+        <TextView
+            android:id="@+id/tv_nick_name"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_centerHorizontal="true"
+            android:text="@string/login_register"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_20"
+            android:layout_below="@id/im_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/re_tlogin"
+        android:id="@+id/rv_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>
